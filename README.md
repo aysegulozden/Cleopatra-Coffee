@@ -1,16 +1,59 @@
-# React + Vite
+# ☕ Cleopatra Coffee Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Cleopatra Coffee için hazırlanmış modern ve responsive bir kafe web sitesi projesidir.
+Bu proje, bir kafenin menüsünü, atmosferini ve iletişim bilgilerini kullanıcı dostu bir arayüz ile ziyaretçilere sunmayı amaçlar.
 
-Currently, two official plugins are available:
+## 🚀 Proje Hakkında
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Cleopatra Coffee web sitesi, kullanıcıların kafe hakkında bilgi almasını ve menüyü incelemesini sağlayan modern bir arayüz sunar.
+Frontend odaklı olarak geliştirilmiş olup performans ve kullanıcı deneyimi ön planda tutulmuştur.
 
-## React Compiler
+Proje özellikle küçük işletmeler için **dijital vitrin görevi görecek bir web sitesi** örneğidir.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ Kullanılan Teknolojiler
 
-## Expanding the ESLint configuration
+* React.js
+* JavaScript (ES6+)
+* Tailwind CSS
+* HTML5
+* CSS3
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+## 💻 Kurulum
+
+Projeyi kendi bilgisayarında çalıştırmak için:
+
+```bash
+# repoyu klonla
+git clone https://github.com/aysegulozden/Cleopatra-Coffee.git
+
+# proje klasörüne gir
+cd Cleopatra-Coffee
+
+# bağımlılıkları yükle
+npm install
+
+# projeyi başlat
+npm run dev
+```
+
+
+## 📸 Özellikler
+
+* Responsive tasarım
+* Modern UI
+* Kafe menüsü tanıtımı
+* İletişim bölümü
+* Hızlı ve sade kullanıcı deneyimi
+
+## 🎯 Amaç
+
+Bu proje;
+
+* frontend geliştirme pratiği yapmak
+* gerçek bir işletme için web sitesi tasarlamak
+* modern web teknolojilerini kullanmak
+
+amacıyla geliştirilmiştir.
+
+
