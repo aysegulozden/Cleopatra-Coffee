@@ -90,7 +90,7 @@ function MenuCard({ item, index }) {
   )
 }
 
-function Menu() {
+function Menu({ onOpenFullMenu }) {
   const [active, setActive] = useState('kahveler')
   const ref = useRef(null)
   const inView = useInView(ref, { once: true, margin: '-80px' })
@@ -187,22 +187,23 @@ function Menu() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: menuData[active].length * 0.1 }}
               whileHover={{ y: -4 }}
+              onClick={onOpenFullMenu}
             >
               <motion.div
                 className="w-14 h-14 border border-gold/40 rounded-full flex items-center justify-center mb-5 group-hover:bg-gold group-hover:border-gold transition-all duration-300"
                 whileHover={{ rotate: 180 }}
                 transition={{ duration: 0.4 }}
               >
-                <i className="fas fa-plus text-gold text-sm group-hover:text-primary transition-colors duration-300" />
+                <i className="fas fa-book-open text-gold text-sm group-hover:text-primary transition-colors duration-300" />
               </motion.div>
-              <p className="font-cinzel text-gold/60 text-xs tracking-widest mb-2">TAM MENÜ İÇİN</p>
-              <p className="text-cream/40 text-xs">Bizi ziyaret edin veya arayın</p>
-              <a
-                href="#contact"
-                className="mt-4 text-[10px] font-cinzel tracking-widest text-gold/50 hover:text-gold transition-colors underline underline-offset-4"
+              <p className="font-cinzel text-gold/80 text-xs tracking-widest mb-2">TAM MENÜYÜ GÖR</p>
+              <p className="text-cream/40 text-xs mb-4">Tüm ürünleri, görselleri ve malzemeleri keşfet</p>
+              <motion.div
+                className="px-5 py-2 border border-gold/40 text-gold font-cinzel text-[10px] tracking-widest group-hover:bg-gold group-hover:text-primary transition-all duration-300"
+                whileHover={{ scale: 1.04 }}
               >
-                İletişim →
-              </a>
+                MENÜYÜ AÇ →
+              </motion.div>
             </motion.div>
           </motion.div>
         </AnimatePresence>
